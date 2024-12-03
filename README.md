@@ -32,6 +32,20 @@ yarn start
    - Stack navigation is often used for navigation between screens within a single app, while tab navigation is often used for navigation between screens in different apps or within a single app.
 
    
+# Grouping Screens
+   (g1,g2)
+    _layout.tsx
+    g1.tsx
+    g2.tsx
+    index.tsx
+
+
+# Dynamic Routing
+   Dynamic  
+     [id].tsx
+
+
+
 
 
   

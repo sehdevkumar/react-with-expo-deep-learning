@@ -29,12 +29,12 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
+      <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="index" options={{ headerShown: true ,title: "Home" }} />
         <Stack.Screen name="(tabsRouting)" options={{ headerShown: false }} />
         <Stack.Screen name="(gourp1)" options={{ headerShown: false }} />
         <Stack.Screen name="(gourp2)" options={{ headerShown: false }} />
-
+        <Stack.Screen name="dynamicRouting/[id].tsx" options={{ headerShown: true ,title: "Dynamic Routing" }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

@@ -26,7 +26,14 @@ const LandingItems = [
         title: 'gourp2',
         description: 'description',
         path: '/(gourp2)'
-    }
+    },
+    {
+        id: 4,
+        title: 'dynamicRouting',
+        description: 'description',
+        path: '/dynamicRouting/1'
+    },
+    
 ]
 
 const index = () => {
@@ -60,7 +67,7 @@ const index = () => {
                             paddingHorizontal: 20
                         }}
                         onPress={() => { 
-                            router.push(item.path as any)
+                            router.push(item.path as Href)
                         }}
                     >
                         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
