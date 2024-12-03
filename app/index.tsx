@@ -33,6 +33,13 @@ const LandingItems = [
         description: 'description',
         path: '/dynamicRouting/sehdevkumar'
     },
+    {
+        id: 5,
+        title: 'List',
+        description: 'Display List',
+        path: '/lists'
+    },
+    
     
 ]
 
