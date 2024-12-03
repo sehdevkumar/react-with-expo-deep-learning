@@ -3,7 +3,7 @@ import { Text, View , ScrollView} from "react-native";
 const left  = () => {
     return (
        
-        <ScrollView style={{flex: 1, width: "100%",height: "100%"}}>
+        <ScrollView style={{flex: 1, width: "100%",height: "100%" , padding: 10}}>
             <Text style={{color: "white", fontSize: 20, margin: 10}}>
                 In this file, we are creating a new screen for our app. 
                 This screen is named "page1". 

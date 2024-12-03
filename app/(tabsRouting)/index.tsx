@@ -2,7 +2,7 @@ import { ScrollView, Text, View } from "react-native";
 
 const index = () => {
     return (
-        <ScrollView style={{flex: 1, width: "100%",height: "100%"}}>
+        <ScrollView style={{flex: 1, width: "100%",height: "100%" , padding: 10}}>
             <Text style={{color: "white" ,fontSize: 20}}>
                 Home is a place where you can be yourself, where you can relax and let your guard down. It is a place where you feel safe and comfortable, where you can be surrounded by people and things that you love. A home is not just a physical structure, it is a feeling, a sense of belonging, a place where you can be yourself without fear of judgment.
 

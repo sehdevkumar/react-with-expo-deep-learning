@@ -29,7 +29,7 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack screenOptions={{ headerShown: false }}>
+      <Stack screenOptions={{ headerShown: false  , animation: "slide_from_right"}}>
         <Stack.Screen name="index" options={{ headerShown: true ,title: "Home" }} />
         <Stack.Screen name="(tabsRouting)" options={{ headerShown: false }} />
         <Stack.Screen name="(gourp1)" options={{ headerShown: false }} />

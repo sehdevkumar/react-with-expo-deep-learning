@@ -2,7 +2,7 @@ import { ScrollView, Text, View } from "react-native";
 
 const index = () => {
     return (
-        <ScrollView style={{flex: 1, width: "100%",height: "100%"}}>
+        <ScrollView style={{flex: 1, width: "100%",height: "100%", padding: 10}}>
             <Text style={{color: "white" ,fontSize: 20}}>
                 A group can be defined as a collection of individuals who share a common goal, purpose or interest. It can be a small group of friends, a family, a community, a team, a club, or even a nation. What makes a group is the shared identity, common experiences and the collective efforts towards achieving a common goal.
 

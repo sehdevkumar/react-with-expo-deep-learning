@@ -31,7 +31,7 @@ const LandingItems = [
         id: 4,
         title: 'dynamicRouting',
         description: 'description',
-        path: '/dynamicRouting/1'
+        path: '/dynamicRouting/sehdevkumar'
     },
     
 ]
