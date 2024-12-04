@@ -35,7 +35,10 @@ export const expenseStore = createStore<ExpensesState>() (
     persist(
         (set,get) => (
              {
-                 addExpense: (expense) => set((state) => ({ expenses: [...get().expenses,  {...expense ,isSync: false}]})),
+                 addExpense: async (expense) => {
+                    await new Promise((resolve) => setTimeout(resolve, 2000));
+                    set((state) => ({ expenses: [...get().expenses,  {...expense ,isSync: false}]}));
+                 },
                  removeExpense: (id) => set((state) => ({ expenses: get().expenses.filter((expense) => expense.id !== id) })),
                  updateExpense: (id,isSync) => set((state) => ({ expenses: get().expenses.map((expense) => (expense.id === id ? { ...expense, isSync: isSync } : expense)) })),
                  expenses: InitialExpenses

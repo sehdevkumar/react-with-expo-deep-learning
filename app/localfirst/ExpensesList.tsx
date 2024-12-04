@@ -20,7 +20,7 @@ const ExpensesList = () => {
     return   (    
         <View style={ExpenseStypes.container}>
             <Text style={ExpenseStypes.text}>ExpensesList</Text>
-             <FlatList data={getExpense} keyExtractor={(item) => item.id}  renderItem={({item}) =>  
+             <FlatList data={getExpense} keyExtractor={(item) => item?.id ?? item.description}  renderItem={({item}) =>  
                {
                 return (
                     <View style={{margin: 10, padding: 10, backgroundColor: "#333", borderRadius: 10 , flexDirection: "row" , width: "100%"}}>
