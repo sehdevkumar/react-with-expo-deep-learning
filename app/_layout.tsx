@@ -36,7 +36,7 @@ export default function RootLayout() {
         <Stack.Screen name="(gourp2)" options={{ headerShown: false }} />
         <Stack.Screen name="dynamicRouting/[id].tsx" options={{ headerShown: true ,title: "Dynamic Routing" }} />
         <Stack.Screen name="List" options={{ headerShown: true ,title: "List" }} />
-        <Stack.Screen name="localfirst" options={{ headerShown: true ,title: "Local First" }} />
+        <Stack.Screen name="localfirst" options={{ headerShown: false ,title: "Local First" }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

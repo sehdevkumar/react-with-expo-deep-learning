@@ -4,7 +4,7 @@ import ExpensesList from "./ExpensesList"
 const index = () => {
     
     return (
-        <View style={{ flex: 1,height: "100%", width: "100%"}}>
+        <View style={{height: "100%", width: "100%" , flex: 1}}>
               
               <ExpensesList/>
 

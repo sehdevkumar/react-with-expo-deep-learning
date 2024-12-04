@@ -5,6 +5,9 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 
 
+/**
+ *  Initial Expenses Data for testing purposes
+ */
 const InitialExpenses: ExpenseType[] = [
     {
         id: "e1",
@@ -27,8 +30,8 @@ const InitialExpenses: ExpenseType[] = [
 ];
 
 
-
-export const expenseStore = create<ExpensesState>() (
+/** We are building a local first app so we need to use zustand and persist state */
+export const expenseStore = createStore<ExpensesState>() (
     persist(
         (set,get) => (
              {
