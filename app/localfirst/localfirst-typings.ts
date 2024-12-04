@@ -3,6 +3,7 @@ export type ExpenseType = {
     description: string;
     amount: number;
     date: string;
+    isSync?: boolean;
 }
 
 

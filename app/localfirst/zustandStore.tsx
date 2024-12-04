@@ -9,24 +9,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
  *  Initial Expenses Data for testing purposes
  */
 const InitialExpenses: ExpenseType[] = [
-    {
-        id: "e1",
-        description: "A pair of shoes",
-        amount: 59.99,
-        date: "2021-12-19",
-      },
-      {
-        id: "e2",
-        description: "A pair of trousers",
-        amount: 89.99,
-        date: "2021-12-19",
-      },
-      {
-        id: "e3",
-        description: "Some bananas",
-        amount: 99.99,
-        date: "2021-12-19",
-      },
+    
 ];
 
 

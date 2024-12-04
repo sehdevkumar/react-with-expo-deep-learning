@@ -10,7 +10,6 @@ const ExpensesList = () => {
 
 
     useEffect   (() => {    
-        console.log(expenses)
         setExpense(expenses)    
 
     }, [expenses])

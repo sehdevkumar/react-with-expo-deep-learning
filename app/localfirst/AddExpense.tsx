@@ -32,7 +32,11 @@ const AddExpense = () => {
         } catch (error) {
             console.error(error);
         } finally {
-            setIsAdding(false);
+            setTimeout(() => {
+                setAmount('');
+                setDescription('');
+                setIsAdding(false);
+            }, 500);
         }
     };
 
