@@ -39,6 +39,12 @@ const LandingItems = [
         description: 'Display List',
         path: '/lists'
     },
+    {
+        id: 6,
+        title: 'localfirst',
+        description: 'description',
+        path: '/localfirst'
+    },
     
     
 ]

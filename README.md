@@ -45,6 +45,11 @@ yarn start
      [id].tsx
 
 
+ 
+# What is hermes engine ? 
+   https://docs.expo.dev/guides/using-hermes
+   
+
 
 
 
