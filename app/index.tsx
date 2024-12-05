@@ -45,6 +45,13 @@ const LandingItems = [
         description: 'description',
         path: '/localfirst'
     },
+    {
+        id: 7,
+        title: 'Interaction Manager',
+        description: 'description',
+        path: '/interactionManager'
+    },
+    
     
     
 ]

@@ -37,6 +37,7 @@ export default function RootLayout() {
         <Stack.Screen name="dynamicRouting/[id].tsx" options={{ headerShown: true ,title: "Dynamic Routing" }} />
         <Stack.Screen name="List" options={{ headerShown: true ,title: "List" }} />
         <Stack.Screen name="localfirst" options={{ headerShown: false ,title: "Local First" }} />
+        <Stack.Screen name="interactionmanager" options={{ headerShown: false ,title: "Interaction Manager" }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
