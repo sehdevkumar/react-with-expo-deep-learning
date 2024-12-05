@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Button } from 'react-native';
 import { UserProfileWithLoading } from './HOC';
 import { AdminProtectedHOC, GuestProtectedHOC, UserProtectedHOC } from './ProtectedHOC';
+import CompoundPatterns from './CompoundPatterns';
 
 export default function PatternsScreen() {
     const [isLoading, setIsLoading] = useState(false);
@@ -26,7 +27,7 @@ export default function PatternsScreen() {
     return (
         <View style={{ flex: 1, padding: 20 }}>
             {/* Using our HOC-wrapped component */}
-            <UserProfileWithLoading
+            {/* <UserProfileWithLoading
                 username={userData.username}
                 email={userData.email}
                 isLoading={isLoading}
@@ -38,7 +39,8 @@ export default function PatternsScreen() {
             <Button
                 title="Reload Data"
                 onPress={loadData}
-            />
+            /> */}
+            <CompoundPatterns/>
         </View>
     );
 }

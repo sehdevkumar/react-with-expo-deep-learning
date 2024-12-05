@@ -10,6 +10,7 @@ const PatternsLayout = ()=> {
             
             <Stack>
                 <Stack.Screen name="index" options={{ headerShown: true ,title: "Interaction Manager" }} />
+                
             </Stack>
 
         </View>
