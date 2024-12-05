@@ -1,6 +1,6 @@
 import { Href, useRouter } from "expo-router";
 import { useState } from "react";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, ScrollView, Text, View } from "react-native";
 
 type Items = {
     title: string,
@@ -51,8 +51,12 @@ const LandingItems = [
         description: 'description',
         path: '/interactionManager'
     },
-    
-    
+    {
+        id: 8,
+        title: 'Patterns',
+        description: 'description',
+        path: '/patterns'
+    }
     
 ]
 
@@ -65,7 +69,7 @@ const index = () => {
 
     return (
 
-        <View style={{ flex: 1, width: "100%", height: "100%", padding: 10, gap: 10 }}>
+        <ScrollView style={{ flex: 1, width: "100%", height: "100%", padding: 10, gap: 10 }}>
             {
                 LandingItems.map((item) => (
 
@@ -96,7 +100,7 @@ const index = () => {
                     </Pressable>
                 ))
             }
-        </View>
+        </ScrollView>
 
     );
 };

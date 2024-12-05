@@ -38,6 +38,7 @@ export default function RootLayout() {
         <Stack.Screen name="List" options={{ headerShown: true ,title: "List" }} />
         <Stack.Screen name="localfirst" options={{ headerShown: false ,title: "Local First" }} />
         <Stack.Screen name="interactionmanager" options={{ headerShown: false ,title: "Interaction Manager" }} />
+        <Stack.Screen name="patterns" options={{ headerShown: false ,title: "Patterns" }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
