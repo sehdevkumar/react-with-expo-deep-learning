@@ -14,6 +14,10 @@ const Index = () => {
     const [page, setPage] = useState(1);
     const [hasMore, setHasMore] = useState(true); // Track if there's more data to load
 
+     
+
+
+
     useEffect(() => {
         const fetchData = async () => {
             if (loading || !hasMore) return; // Prevent multiple API calls

@@ -1,5 +1,6 @@
 import { Href, useRouter } from "expo-router";
-import { useState } from "react";
+import { ErrorBoundaryProps, Try } from "expo-router/build/views/Try";
+import { useEffect, useState } from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 
 type Items = {
@@ -60,18 +61,29 @@ const LandingItems = [
     
 ]
 
+
+
 const index = () => {
 
     const router  = useRouter()
 
+
+    useEffect(() => {
+        
+          
+       
+      
+    }, [])
     
      
 
     return (
-
+       
         <ScrollView style={{ flex: 1, width: "100%", height: "100%", padding: 10, gap: 10 }}>
             {
                 LandingItems.map((item) => (
+                 
+                    
 
                     <Pressable
                         key={item.id}
@@ -102,7 +114,10 @@ const index = () => {
             }
         </ScrollView>
 
+
     );
 };
 
 export default index;
+
+
